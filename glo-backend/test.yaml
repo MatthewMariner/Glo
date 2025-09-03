@@ -1,0 +1,47 @@
+config:
+  target: 'https://glo-backend-efdc21b35adc.herokuapp.com'
+  phases:
+    - duration: 45
+      arrivalRate: 1
+      name: Warm up with 25 users
+    - duration: 45
+      arrivalRate: 2
+      name: Increase to 50 users
+    - duration: 45
+      arrivalRate: 4
+      name: Increase to 100 users
+    - duration: 45
+      arrivalRate: 8
+      name: Increase to 200 users
+    - duration: 45
+      arrivalRate: 20
+      name: Increase to 500 users
+    - duration: 45
+      arrivalRate: 40
+      name: Increase to 1000 users
+    - duration: 45
+      arrivalRate: 80
+    #   name: Increase to 2000 users
+    # - duration: 45
+    #   arrivalRate: 200
+    #   name: Ramp up to 5000 users
+    # - duration: 450
+    #   arrivalRate: 200
+    #   name: Sustained load with 5000 users
+  engines:
+    socketio: {}
+
+scenarios:
+  - name: WebSocket Testing
+    engine: socketio
+    flow:
+      - emit:
+          channel: 'message'
+          data:
+            messages:
+              - role: 'user'
+                content: 'Hello, World!'
+            userId: '12345'
+            conversationId: '67890'
+            userPromptId: 'abcde'
+      - think: 15 #this is what we need to play around with

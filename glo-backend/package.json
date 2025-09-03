@@ -1,0 +1,34 @@
+{
+  "name": "Glo-Backend",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.16.x"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "artillery-engine-socketio-v3": "^1.2.0",
+    "bcrypt": "^5.1.0",
+    "bufferutil": "^4.0.7",
+    "cookie-universal": "^2.2.2",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "endent": "^2.1.0",
+    "eventsource-parser": "^1.0.0",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^3.0.1",
+    "socket.io": "^4.7.1"
+  },
+  "devDependencies": {
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "eventsource": "^2.0.2"
+  }
+}
