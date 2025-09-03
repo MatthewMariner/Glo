@@ -1,0 +1,147 @@
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+coverage/
+*/coverage/
+
+# Production builds
+build/
+dist/
+*/build/
+*/dist/
+.next/
+*/.next/
+out/
+*/out/
+
+# Environment variables
+.env
+.env.*
+*.env
+!.env.example
+!.env.template
+!.env.sample
+**/.env
+**/.env.*
+**/env/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Security - CRITICAL
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+*.pub
+private/
+secrets/
+credentials/
+**/private/
+**/secrets/
+**/credentials/
+
+# API Keys and Tokens
+*api_key*
+*apikey*
+*secret*
+*token*
+*credential*
+*password*
+*.token
+*.secret
+config.json
+!**/src/**/*.ts
+!**/src/**/*.tsx
+!**/src/**/*.js
+!**/src/**/*.jsx
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+!**/prisma/seed.sql
+!**/migrations/*.sql
+
+# Temporary files
+tmp/
+temp/
+cache/
+*.tmp
+*.temp
+*.cache
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.backup
+*.bak
+*.old
+*~
+*.orig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Misc
+*.seed
+*.pid
+*.pid.lock
+.vercel
+.turbo
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Artillery test results
+result.json
+result.html
+artillery-report.html
